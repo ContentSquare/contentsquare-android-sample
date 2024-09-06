@@ -1,11 +1,11 @@
-package com.example.androidsampleapp
+package com.contentsquare.android.sample
 
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.androidsampleapp.analytics.Analytics
-import com.example.androidsampleapp.databinding.ActivityGdprBinding
+import com.contentsquare.android.sample.analytics.Analytics
+import com.contentsquare.android.sample.databinding.ActivityGdprBinding
 
 class GdprActivity : AppCompatActivity() {
 

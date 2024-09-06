@@ -1,4 +1,4 @@
-package com.example.androidsampleapp.fragment
+package com.contentsquare.android.sample.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.example.androidsampleapp.R
+import com.contentsquare.android.sample.R
 
 class FragmentTab(private val text: String) : Fragment() {
 

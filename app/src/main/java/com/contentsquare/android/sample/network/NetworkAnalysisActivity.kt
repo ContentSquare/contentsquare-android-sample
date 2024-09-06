@@ -1,11 +1,11 @@
-package com.example.androidsampleapp.network
+package com.contentsquare.android.sample.network
 
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.contentsquare.android.error.analysis.ErrorAnalysis
-import com.example.androidsampleapp.databinding.ActivityNetworkAnalysisBinding
+import com.contentsquare.android.sample.databinding.ActivityNetworkAnalysisBinding
 
 class NetworkAnalysisActivity : AppCompatActivity() {
 

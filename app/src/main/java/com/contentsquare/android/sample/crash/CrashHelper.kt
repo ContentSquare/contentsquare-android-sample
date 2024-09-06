@@ -1,11 +1,11 @@
-package com.example.androidsampleapp.crash
+package com.contentsquare.android.sample.crash
 
 import android.content.Context
 import android.content.Intent
 import android.os.Handler
 import android.os.Looper
 import androidx.lifecycle.LifecycleCoroutineScope
-import com.example.androidsampleapp.utils.PreferenceHelper
+import com.contentsquare.android.sample.utils.PreferenceHelper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

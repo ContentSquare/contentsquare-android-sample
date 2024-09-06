@@ -1,4 +1,4 @@
-package com.example.androidsampleapp
+package com.contentsquare.android.sample
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -16,6 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.contentsquare.android.Contentsquare
+import com.contentsquare.android.sample.R
 import com.contentsquare.android.compose.analytics.TriggeredOnResume
 
 class ComposeSimpleActivity : ComponentActivity() {

@@ -1,9 +1,9 @@
-package com.example.androidsampleapp
+package com.contentsquare.android.sample
 
 import android.app.Activity
 import android.app.Application
 import android.os.Bundle
-import com.example.androidsampleapp.crash.CrashHelper
+import com.contentsquare.android.sample.crash.CrashHelper
 
 class SampleApplication : Application() {
 

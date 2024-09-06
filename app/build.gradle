@@ -10,7 +10,7 @@ android {
     compileSdk 35
 
     defaultConfig {
-        applicationId "com.example.androidsampleapp"
+        applicationId "com.contentsquare.android.sample"
         minSdk 21
         targetSdk 35
         versionCode 1
@@ -52,7 +52,7 @@ android {
             it.excludes += '/META-INF/DEPENDENCIES'
         }
     }
-    namespace 'com.example.androidsampleapp'
+    namespace 'com.contentsquare.android.sample'
 }
 
 dependencies {

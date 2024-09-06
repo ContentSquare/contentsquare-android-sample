@@ -1,10 +1,10 @@
-package com.example.androidsampleapp
+package com.contentsquare.android.sample
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.contentsquare.android.Contentsquare
 import com.contentsquare.android.api.model.CustomVar
-import com.example.androidsampleapp.databinding.ActivityCustomVariablesBinding
+import com.contentsquare.android.sample.databinding.ActivityCustomVariablesBinding
 
 class CustomVariablesActivity : AppCompatActivity() {
 

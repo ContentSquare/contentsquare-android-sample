@@ -1,10 +1,10 @@
-package com.example.androidsampleapp.crash
+package com.contentsquare.android.sample.crash
 
 import android.content.Context
 import android.os.Handler
 import androidx.annotation.StringRes
 import androidx.lifecycle.LifecycleCoroutineScope
-import com.example.androidsampleapp.R
+import com.contentsquare.android.sample.R
 
 sealed class CrashType(@StringRes val nameRes: Int, val performCrash: () -> Unit) {
 

@@ -1,8 +1,8 @@
-package com.example.androidsampleapp
+package com.contentsquare.android.sample
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.androidsampleapp.analytics.Analytics
+import com.contentsquare.android.sample.analytics.Analytics
 
 class SimpleActivity : AppCompatActivity() {
 

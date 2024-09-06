@@ -1,6 +1,6 @@
-package com.example.androidsampleapp.network
+package com.contentsquare.android.sample.network
 
-import com.example.androidsampleapp.network.NetworkAnalysisActivity.HttpMethod
+import com.contentsquare.android.sample.network.NetworkAnalysisActivity.HttpMethod
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

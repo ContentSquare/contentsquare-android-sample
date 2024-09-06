@@ -1,4 +1,4 @@
-package com.example.androidsampleapp.crash
+package com.contentsquare.android.sample.crash
 
 import android.app.Service
 import android.content.Intent

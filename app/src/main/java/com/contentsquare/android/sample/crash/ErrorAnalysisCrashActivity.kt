@@ -1,4 +1,4 @@
-package com.example.androidsampleapp.crash
+package com.contentsquare.android.sample.crash
 
 import android.os.Bundle
 import android.os.Handler
@@ -6,8 +6,8 @@ import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
 import androidx.lifecycle.lifecycleScope
-import com.example.androidsampleapp.R
-import com.example.androidsampleapp.databinding.ActivityErrorCrashBinding
+import com.contentsquare.android.sample.R
+import com.contentsquare.android.sample.databinding.ActivityErrorCrashBinding
 
 class ErrorAnalysisCrashActivity : AppCompatActivity() {
 

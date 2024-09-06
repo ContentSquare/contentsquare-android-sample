@@ -1,4 +1,4 @@
-package com.example.androidsampleapp.fragment
+package com.contentsquare.android.sample.fragment
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter

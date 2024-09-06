@@ -1,4 +1,4 @@
-package com.example.androidsampleapp.analytics
+package com.contentsquare.android.sample.analytics
 
 import android.content.Context
 import android.util.Log

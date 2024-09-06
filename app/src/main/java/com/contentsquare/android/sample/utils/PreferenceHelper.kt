@@ -1,4 +1,4 @@
-package com.example.androidsampleapp.utils
+package com.contentsquare.android.sample.utils
 
 import android.content.Context
 

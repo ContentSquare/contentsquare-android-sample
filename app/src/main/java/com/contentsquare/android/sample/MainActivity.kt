@@ -1,4 +1,4 @@
-package com.example.androidsampleapp
+package com.contentsquare.android.sample
 
 import android.content.Intent
 import android.graphics.Color
@@ -10,12 +10,12 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.contentsquare.android.api.Currencies
-import com.example.androidsampleapp.crash.ErrorAnalysisCrashActivity
-import com.example.androidsampleapp.analytics.Analytics
-import com.example.androidsampleapp.databinding.ActivityMainBinding
-import com.example.androidsampleapp.fragment.MainFragmentActivity
-import com.example.androidsampleapp.network.NetworkAnalysisActivity
-import com.example.androidsampleapp.useridentifier.UserIdentifierActivity
+import com.contentsquare.android.sample.analytics.Analytics
+import com.contentsquare.android.sample.crash.ErrorAnalysisCrashActivity
+import com.contentsquare.android.sample.databinding.ActivityMainBinding
+import com.contentsquare.android.sample.fragment.MainFragmentActivity
+import com.contentsquare.android.sample.network.NetworkAnalysisActivity
+import com.contentsquare.android.sample.useridentifier.UserIdentifierActivity
 
 class MainActivity : AppCompatActivity() {
 

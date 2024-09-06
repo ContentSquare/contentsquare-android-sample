@@ -1,4 +1,4 @@
-package com.example.androidsampleapp.network
+package com.contentsquare.android.sample.network
 
 interface NetworkIntegration {
     fun sendRequest(
