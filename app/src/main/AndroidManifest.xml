@@ -14,18 +14,7 @@
         android:theme="@style/Theme.AndroidSampleApp"
         android:name=".SampleApplication"
         tools:ignore="GoogleAppIndexingWarning">
-        <uses-library
-            android:name="org.apache.http.legacy"
-            android:required="false" />
 
-        <activity android:name=".crash.ErrorAnalysisCrashActivity" />
-        <activity android:name=".CustomVariablesActivity" />
-        <activity android:name=".DynamicVariablesActivity" />
-        <activity android:name=".MaskingScenariosActivity" />
-        <activity android:name=".GdprActivity" />
-        <activity android:name=".fragment.MainFragmentActivity" />
-        <activity android:name=".SimpleActivity" />
-        <activity android:name=".ComposeSimpleActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -35,6 +24,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".crash.ErrorAnalysisCrashActivity" />
+        <activity android:name=".CustomVariablesActivity" />
+        <activity android:name=".DynamicVariablesActivity" />
+        <activity android:name=".MaskingScenariosActivity" />
+        <activity android:name=".GdprActivity" />
+        <activity android:name=".fragment.MainFragmentActivity" />
+        <activity android:name=".SimpleActivity" />
+        <activity android:name=".ComposeSimpleActivity" />
         <activity android:name=".network.NetworkAnalysisActivity" />
         <activity android:name=".useridentifier.UserIdentifierActivity" />
     </application>
