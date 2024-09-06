@@ -3,13 +3,14 @@ package com.contentsquare.android.sample.analytics
 import android.content.Context
 import android.util.Log
 import com.contentsquare.android.Contentsquare
+import com.contentsquare.android.api.model.CustomVar
 import com.contentsquare.android.api.model.Transaction
 
 object Analytics {
 
     private val TAG = Analytics::class.java.simpleName
 
-    fun tagScreen(screenName: String) {
+    fun trackScreen(screenName: String) {
         Log.i(TAG, "Screen: $screenName")
         Contentsquare.send(screenName)
     }
@@ -54,5 +55,13 @@ object Analytics {
 
     fun send(key: String, value: Long) {
         Contentsquare.send(key, value)
+    }
+
+    fun send(key: String, customVar: Array<CustomVar>) {
+        Contentsquare.send(key, customVar)
+    }
+
+    fun sendUserIdentifier(identifier: String) {
+        Contentsquare.sendUserIdentifier(identifier)
     }
 }

@@ -21,7 +21,7 @@ class MaskingScenariosActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        Analytics.tagScreen("Masking-Scenarios-Activity")
+        Analytics.trackScreen("Masking-Scenarios-Activity")
     }
 
     fun onSetDefaultMaskingOn(view: View) {

@@ -42,11 +42,11 @@ class MainFragmentActivity : AppCompatActivity() {
         viewPager2Callback = object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
-                Analytics.tagScreen(pagerAdapter.getPageTitle(position).toString())
+                Analytics.trackScreen(pagerAdapter.getPageTitle(position).toString())
             }
         }
         viewPager.registerOnPageChangeCallback(viewPager2Callback)
-        Analytics.tagScreen("Main-Fragment-Activity")
+        Analytics.trackScreen("Main-Fragment-Activity")
     }
 
     override fun onPause() {

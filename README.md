@@ -12,9 +12,9 @@ You must have the latest version of Android Studio installed.
 
 ### Running the app
 
-* Clone this repo
-* You should be able to run the app
-* You should see logs from the SDK in the Logcat
+* Clone this repo.
+* You should be able to run the app.
+* You should see logs from the SDK by filtering the log with 'CSLIB' tag in the Logcat.
 
 ## 📚 Docs
 

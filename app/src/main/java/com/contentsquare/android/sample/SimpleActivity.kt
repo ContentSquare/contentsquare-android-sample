@@ -13,6 +13,6 @@ class SimpleActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        Analytics.tagScreen("Simple-Activity")
+        Analytics.trackScreen("Simple-Activity")
     }
 }

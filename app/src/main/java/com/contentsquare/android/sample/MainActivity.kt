@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        Analytics.tagScreen("Main-Activity")
+        Analytics.trackScreen("Main-Activity")
     }
 
     fun openActivity(view: View) {
@@ -103,12 +103,12 @@ class MainActivity : AppCompatActivity() {
         builder.setOnDismissListener {
             //After the Popup is dismissed. The base activity lifecycle remains the same, Therefore
             // we need to manually generate an activity ScreenView for the base Activity.
-            Analytics.tagScreen("Main-Activity")
+            Analytics.trackScreen("Main-Activity")
         }
 
         val dialog: AlertDialog = builder.create()
         dialog.show()
-        Analytics.tagScreen("ActivityDialog_DialogShow")
+        Analytics.trackScreen("ActivityDialog_DialogShow")
     }
 
     fun openCompose(view: View) {

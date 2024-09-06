@@ -16,8 +16,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.contentsquare.android.Contentsquare
-import com.contentsquare.android.sample.R
 import com.contentsquare.android.compose.analytics.TriggeredOnResume
+import com.contentsquare.android.sample.analytics.Analytics
 
 class ComposeSimpleActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,14 +34,16 @@ class ComposeSimpleActivity : ComponentActivity() {
 @Composable
 fun SimpleScreen() {
     // Send screen name to Contentsquare tracking when screen is displayed
-    TriggeredOnResume { Contentsquare.send("Simple-Compose-Activity") }
+    TriggeredOnResume { Analytics.trackScreen("Simple-Compose-Activity") }
 
-    Scaffold (
-        topBar = { TopAppBar(
-            title = {
-                Text(text = stringResource(R.string.app_name))
-            }
-        )}
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = {
+                    Text(text = stringResource(R.string.app_name))
+                }
+            )
+        }
     ) { innerPadding ->
         Box(
             modifier = Modifier
@@ -51,7 +53,8 @@ fun SimpleScreen() {
         ) {
             Text(text = stringResource(id = R.string.text_simple_compose_activity))
         }
-    }}
+    }
+}
 
 @Preview
 @Composable
