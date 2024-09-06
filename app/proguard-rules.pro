@@ -1,6 +1,6 @@
 # Add project specific ProGuard rules here.
 # You can control the set of applied configuration files using the
-# proguardFiles setting in build.gradle.
+# proguardFiles setting in build.gradle.kts.
 #
 # For more details, see
 #   http://developer.android.com/guide/developing/tools/proguard.html
@@ -19,4 +19,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
--keepattributes SourceFile,LineNumberTable        # Keep file names and line numbers
+
+# Keep file names and line numbers. This is needed to provide line numbers and file names Error Analysis features.
+# For more information: https://docs.contentsquare.com/en/android/error-analysis/#proguard-configuration
+-keepattributes SourceFile,LineNumberTable

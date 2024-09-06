@@ -8,7 +8,7 @@ Welcome 🎉 ! This app showcases how to use the Contentsquare SDK in an Android
 
 ### Prerequisites
 
-You must have Android Studio installed.
+You must have the latest version of Android Studio installed.
 
 ### Running the app
 
