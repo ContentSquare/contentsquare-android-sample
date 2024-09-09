@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">CS Android Sample app</string>
+    <string name="main_screen_title1">Track Screens</string>
+    <string name="main_screen_title2">Track Transactions</string>
+    <string name="main_screen_title3">GDPR</string>
+    <string name="main_screen_title4">Error Analysis</string>
+    <string name="main_screen_title5">Public API</string>
+    <string name="label_transaction_int_currency">Transaction</string>
+    <string name="label_transaction_string_currency">Transaction (Currency as String)</string>
+    <string name="label_activity">Activity</string>
+    <string name="label_fragment">Fragment</string>
+    <string name="label_popup">Popup</string>
+    <string name="label_compose">Compose Activity</string>
+    <string name="label_privacy">Privacy Options</string>
+    <string name="label_network_analysis">Network Analysis</string>
+    <string name="label_user_identifier">User Identifier</string>
+    <string name="label_crash">Crashes</string>
+    <string name="label_http_title">HTTP Method :</string>
+    <string name="label_library_title">Library :</string>
+    <string name="label_response_title">Response code :</string>
+    <string name="label_delay_title">Delay (ms)</string>
+    <string name="label_add_email">Add email in url</string>
+    <string name="label_add_extra_path">Add extra path</string>
+    <string name="label_send_button">Send</string>
+    <string name="label_timeout_button">Timeout</string>
+    <string name="label_custom_variables">Custom Variables</string>
+    <string name="label_dynamic_variables">Dynamic Variables</string>
+    <string name="label_behaviour_hint"><![CDATA[Response code >= 400 will be capture as an error]]></string>
+    <string name="first_fragment">First Fragment</string>
+    <string name="second_fragment">Second Fragment</string>
+    <string name="third_fragment">Third Fragment</string>
+    <string name="text_simple_activity">Simple Activity</string>
+    <string name="opt_in_label">Opt-In</string>
+    <string name="opt_out_label">Opt-Out</string>
+    <string name="forget_me_label">Forget Me</string>
+    <string name="stop_tracking_label">Stop Tracking</string>
+    <string name="resume_tracking_label">Resume Tracking</string>
+    <string name="privacy_option">Privacy options</string>
+    <string name="userId_refreshed">UserId refreshed</string>
+    <string name="refresh_button">Refresh</string>
+    <string name="user_id_text">"Your userId is -"</string>
+    <!-- CustomVariablesActivity -->
+    <string name="cvars_text">This class showcases how to use custom variables to gather additional data about the screen, the user or the session, sent within a screenview. Please refer to the logs to check the variables being sent.</string>
+    <!-- DynamicVariablesActivity -->
+    <string name="label_send_numeric_value">Send numeric value</string>
+    <string name="text_key">text key</string>
+    <string name="key">key</string>
+    <string name="text_value">text value</string>
+    <string name="value">value</string>
+    <string name="label_send_text_value">Send text value</string>
+    <string name="numeric_key">Numeric key</string>
+    <string name="send">send</string>
+    <string name="numeric_value">Numeric value</string>
+    <string name="numeric_default_value">123</string>
+    <string name="variables">Variables</string>
+    <!-- SessionReplayActivity -->
+    <string name="session_replay_title">Session Replay</string>
+    <string name="label_masking_scenarios">Masking Scenarios</string>
+    <string name="text_set_default_masking">Default masking</string>
+    <string name="text_set_default_masking_off">Turn off default masking</string>
+    <string name="text_set_default_masking_on">Turn on default masking</string>
+    <string name="text_set_masking">Masking Scenarios</string>
+    <string name="text_mask_all_text_view">Mask all TextView</string>
+    <string name="text_un_mask_all_text_view">Unmask all TextView</string>
+    <string name="text_mask_all_image_view">Mask all ImageView</string>
+    <string name="text_un_mask_all_image_view">Unmask all ImageView</string>
+    <string name="text_mask_red_image_view">Mask Red ImageView</string>
+    <string name="text_un_mask_red_image_view">Unmask Red ImageView</string>
+    <string name="label_red_image_view">Red ImageView</string>
+    <string name="label_blue_image_view">Blue ImageView</string>
+    <string name="text_one_line_text_view">One line TextView</string>
+    <string name="text_multiple_line_text_view">Multiple line TextView. Multiple line TextView. Multiple line TextView. Multiple line TextView. Multiple line TextView. Multiple line TextView. </string>
+    <string name="text_simple_compose_activity">Simple Compose Activity</string>
+
+    <string name="activity_crash_title">Crashes</string>
+    <string name="activity_crash_null_pointer_exception">Null pointer exception</string>
+    <string name="activity_crash_uninitialised">Uninitialised exception</string>
+    <string name="activity_crash_causes">Multiple causes exception</string>
+    <string name="activity_crash_too_many_causes">Too many causes exception</string>
+    <string name="activity_crash_stack_overflow">Stackoverflow exception</string>
+    <string name="activity_crash_out_of_memory">Out of memory exception</string>
+    <string name="activity_crash_coroutines_io">NPE in Coroutine IO Dispatcher</string>
+    <string name="activity_crash_coroutines_main">NPE in Coroutine Main Dispatcher</string>
+    <string name="activity_crash_service">NPE in Service Creation</string>
+    <string name="activity_crash_delayed">NPE Delayed by 5 seconds</string>
+    <string name="activity_crash_next_start">NPE On next application start</string>
+    <string name="activity_crash_foreground">NPE On next foreground</string>
+    <string name="activity_crash_foreground_with_delay">NPE On next foreground delayed 5s</string>
+    <string name="activity_crash_type">Crash Type:</string>
+    <string name="activity_crash_perform_crash">Perform Crash</string>
+    <string name="activity_crash_mapping_id_not_available">Not available. Did you apply the plugin?</string>
+    <string name="activity_crash_mapping_id">Mapping ID: %1s</string>
+
+</resources>
