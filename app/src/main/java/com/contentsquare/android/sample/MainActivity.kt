@@ -68,6 +68,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, MaskingScenariosActivity::class.java))
     }
 
+    fun openEventTriggeredReplay(view: View) {
+        startActivity(Intent(this, EventTriggeredReplayActivity::class.java))
+    }
+
     fun openPopUp(view: View) {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("App Bar color")
