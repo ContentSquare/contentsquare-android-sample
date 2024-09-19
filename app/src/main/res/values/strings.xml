@@ -72,6 +72,11 @@
     <string name="text_multiple_line_text_view">Multiple line TextView. Multiple line TextView. Multiple line TextView. Multiple line TextView. Multiple line TextView. Multiple line TextView. </string>
     <string name="text_simple_compose_activity">Simple Compose Activity</string>
 
+    <!-- Event Triggered Replay -->
+    <string name="event_triggered_replay">Event Triggered Replay (ETR)</string>
+    <string name="trigger_replay_for_current_screen">Trigger replay for current screen</string>
+    <string name="trigger_replay_for_current_session">Trigger replay for current session</string>
+
     <string name="activity_crash_title">Crashes</string>
     <string name="activity_crash_null_pointer_exception">Null pointer exception</string>
     <string name="activity_crash_uninitialised">Uninitialised exception</string>

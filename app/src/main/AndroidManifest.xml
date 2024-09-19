@@ -34,6 +34,7 @@
         <activity android:name=".ComposeSimpleActivity" />
         <activity android:name=".network.NetworkAnalysisActivity" />
         <activity android:name=".useridentifier.UserIdentifierActivity" />
+        <activity android:name=".EventTriggeredReplayActivity" />
     </application>
 
 </manifest>
