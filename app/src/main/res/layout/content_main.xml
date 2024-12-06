@@ -103,13 +103,22 @@
             app:layout_constraintTop_toBottomOf="@+id/title_session_replay" />
 
         <TextView
+            android:id="@+id/label_event_triggered_replay"
+            style="@style/ListText"
+            android:layout_marginStart="32dp"
+            android:onClick="openEventTriggeredReplay"
+            android:text="@string/event_triggered_replay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_masking_scenarios" />
+
+        <TextView
             android:id="@+id/title_variables"
             style="@style/TitleText"
             android:layout_marginStart="32dp"
             android:layout_marginTop="24dp"
             android:text="@string/variables"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/label_masking_scenarios" />
+            app:layout_constraintTop_toBottomOf="@+id/label_event_triggered_replay" />
 
         <TextView
             android:id="@+id/label_custom_variables"
