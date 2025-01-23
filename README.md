@@ -18,5 +18,4 @@ You must have the latest version of Android Studio installed.
 
 ## 📚 Docs
 
-If you wish to learn more about the Contentsquare SDK you can find the
-documentation [here](https://docs.contentsquare.com/android/)
+If you wish to learn more about the Contentsquare SDK you can find the documentation [here](https://docs.contentsquare.com/android/)
