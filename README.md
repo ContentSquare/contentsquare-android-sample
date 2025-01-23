@@ -1,6 +1,6 @@
 # Contentsquare Android Sample
 
-<img src="ReadmeAssets/cs_banner.png" height="100%" width="100%%"> <br />
+<img src="ReadmeAssets/banner.png" height="100%" width="100%%"> <br />
 
 Welcome 🎉 ! This app showcases how to use the Contentsquare SDK in an Android application.
 
