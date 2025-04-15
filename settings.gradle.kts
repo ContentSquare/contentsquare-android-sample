@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name="Contentsquare Android Sample"
+rootProject.name="CSQ Sample App"
 include(":app")
