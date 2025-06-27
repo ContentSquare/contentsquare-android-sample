@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.contentsquare.android.error.analysis.ErrorAnalysis
+import com.contentsquare.CSQ
 import com.contentsquare.android.sample.databinding.ActivityNetworkAnalysisBinding
 
 class NetworkAnalysisActivity : AppCompatActivity() {
@@ -27,7 +27,7 @@ class NetworkAnalysisActivity : AppCompatActivity() {
         binding = ActivityNetworkAnalysisBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        ErrorAnalysis.setUrlMaskingPatterns(listOf(URL_MASK))
+        CSQ.setUrlMaskingPatterns(listOf(URL_MASK))
         binding.extraPath.text = EXTRA_PATH
 
         libraryAdapter = ArrayAdapter<Library>(

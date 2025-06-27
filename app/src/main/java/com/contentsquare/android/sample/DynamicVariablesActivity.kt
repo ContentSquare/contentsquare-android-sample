@@ -17,11 +17,11 @@ class DynamicVariablesActivity : AppCompatActivity() {
     }
 
     fun onSendText(view: View) {
-        Analytics.send(binding.textKey.text.toString(), binding.textValue.text.toString())
+        Analytics.sendDynamicVar(binding.textKey.text.toString(), binding.textValue.text.toString())
     }
 
     fun onSendNumber(view: View) {
-        Analytics.send(
+        Analytics.sendDynamicVar(
             binding.numericKey.text.toString(),
             binding.numericValue.text.toString().toLong()
         )
