@@ -9,13 +9,14 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.contentsquare.android.api.Currencies
+import com.contentsquare.api.model.Currency
 import com.contentsquare.android.sample.analytics.Analytics
 import com.contentsquare.android.sample.crash.ErrorAnalysisCrashActivity
 import com.contentsquare.android.sample.databinding.ActivityMainBinding
 import com.contentsquare.android.sample.fragment.MainFragmentActivity
 import com.contentsquare.android.sample.network.NetworkAnalysisActivity
 import com.contentsquare.android.sample.useridentifier.UserIdentifierActivity
+import com.contentsquare.api.model.Transaction
 
 class MainActivity : AppCompatActivity() {
 
@@ -68,10 +69,6 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, MaskingScenariosActivity::class.java))
     }
 
-    fun openEventTriggeredReplay(view: View) {
-        startActivity(Intent(this, EventTriggeredReplayActivity::class.java))
-    }
-
     fun openPopUp(view: View) {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("App Bar color")
@@ -121,23 +118,23 @@ class MainActivity : AppCompatActivity() {
 
     fun pushTransaction(view: View) {
         val amount = 244.33f
-        val currency = Currencies.EUR
-        val id = "1233455"
-        Analytics.pushTransaction(amount, currency, id)
+        val currency = Currency.EUR
+        val id = "123"
+        val transaction = Transaction(amount, currency, id)
+        Analytics.pushTransaction(transaction)
         Toast.makeText(
-            applicationContext, "Transaction id $id is being tracked", Toast
-                .LENGTH_SHORT
+            applicationContext, "Transaction id $id is being tracked", Toast.LENGTH_SHORT
         ).show()
     }
 
     fun pushTransactionString(view: View) {
         val amount = 234.33f
-        val currencyString = "USD"
-        val transactionId = "1111"
-        Analytics.pushTransaction(amount, currencyString, transactionId)
+        val currency = Currency.fromString("USD")
+        val id = "456"
+        val transaction = Transaction(amount, currency, id)
+        Analytics.pushTransaction(transaction)
         Toast.makeText(
-            applicationContext, "Transaction id $transactionId is being tracked", Toast
-                .LENGTH_SHORT
+            applicationContext, "Transaction id $id is being tracked", Toast.LENGTH_SHORT
         ).show()
     }
 }

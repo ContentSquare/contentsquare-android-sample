@@ -5,7 +5,8 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.contentsquare.android.Contentsquare
+import com.contentsquare.CSQ
+
 import com.contentsquare.android.sample.analytics.Analytics
 import com.contentsquare.android.sample.databinding.ActivityMaskingScenariosBinding
 
@@ -25,34 +26,34 @@ class MaskingScenariosActivity : AppCompatActivity() {
     }
 
     fun onSetDefaultMaskingOn(view: View) {
-        Contentsquare.setDefaultMasking(true)
+        CSQ.setDefaultMasking(true)
     }
 
     fun onSetDefaultMaskingOff(view: View) {
-        Contentsquare.setDefaultMasking(false)
+        CSQ.setDefaultMasking(false)
     }
 
     fun onMaskAllTextView(view: View) {
-        Contentsquare.mask(TextView::class.java)
+        CSQ.mask(TextView::class.java)
     }
 
     fun onUnmaskAllTextView(view: View) {
-        Contentsquare.unMask(TextView::class.java)
+        CSQ.unmask(TextView::class.java)
     }
 
     fun onMaskAllImageView(view: View) {
-        Contentsquare.mask(ImageView::class.java)
+        CSQ.mask(ImageView::class.java)
     }
 
     fun onUnmaskAllImageView(view: View) {
-        Contentsquare.unMask(ImageView::class.java)
+        CSQ.unmask(ImageView::class.java)
     }
 
     fun onUnmaskRedImageView(view: View) {
-        Contentsquare.mask(binding.redImageView)
+        CSQ.mask(binding.redImageView)
     }
 
     fun onMaskRedImageView(view: View) {
-        Contentsquare.mask(binding.redImageView)
+        CSQ.mask(binding.redImageView)
     }
 }

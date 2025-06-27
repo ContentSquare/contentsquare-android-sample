@@ -2,9 +2,10 @@ package com.contentsquare.android.sample.analytics
 
 import android.content.Context
 import android.util.Log
-import com.contentsquare.android.Contentsquare
-import com.contentsquare.android.api.model.CustomVar
-import com.contentsquare.android.api.model.Transaction
+import com.contentsquare.CSQ
+
+import com.contentsquare.api.model.CustomVar
+import com.contentsquare.api.model.Transaction
 
 object Analytics {
 
@@ -12,56 +13,47 @@ object Analytics {
 
     fun trackScreen(screenName: String) {
         Log.i(TAG, "Screen: $screenName")
-        Contentsquare.send(screenName)
+        CSQ.trackScreenview(screenName)
     }
 
-    fun pushTransaction(amount: Float, currency: Int, id: String) {
-        Contentsquare.send(Transaction.builder(amount, currency).id(id).build())
-        Log.i(TAG, "Transaction: $amount - ID: $id")
-    }
-
-    fun pushTransaction(amount: Float, currency: String, id: String){
-        Contentsquare.send(Transaction.builder(amount, currency).id(id).build())
-        Log.i(TAG, "Transaction: $amount $currency - ID: $id")
+    fun pushTransaction(transaction: Transaction) {
+        CSQ.trackTransaction(transaction)
+        Log.i(TAG, "Transaction: ${transaction.value} - ID: ${transaction.id}")
     }
 
     fun stopTracking() {
-        Contentsquare.stopTracking()
+        CSQ.stop()
     }
 
     fun resumeTracking() {
-        Contentsquare.resumeTracking()
-    }
-
-    fun forgetMe() {
-        Contentsquare.forgetMe()
+        CSQ.resumeTracking()
     }
 
     fun optIn(context: Context) {
-        Contentsquare.optIn(context)
+        CSQ.optIn(context)
     }
 
-    fun optOut(context: Context) {
-        Contentsquare.optOut(context)
+    fun optOut() {
+        CSQ.optOut()
     }
 
     fun provideUserId(): String {
-        return Contentsquare.getUserId()
+        return CSQ.metadata.userId.orEmpty()
     }
 
-    fun send(key: String, value: String) {
-        Contentsquare.send(key, value)
+    fun sendDynamicVar(key: String, value: String) {
+        CSQ.addDynamicVar(key, value)
     }
 
-    fun send(key: String, value: Long) {
-        Contentsquare.send(key, value)
+    fun sendDynamicVar(key: String, value: Long) {
+        CSQ.addDynamicVar(key, value)
     }
 
-    fun send(key: String, customVar: Array<CustomVar>) {
-        Contentsquare.send(key, customVar)
+    fun sendCustomVar(screenName: String, customVar: List<CustomVar>) {
+        CSQ.trackScreenview(screenName, customVar)
     }
 
     fun sendUserIdentifier(identifier: String) {
-        Contentsquare.sendUserIdentifier(identifier)
+        CSQ.sendUserIdentifier(identifier)
     }
 }

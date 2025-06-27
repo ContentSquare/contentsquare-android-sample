@@ -15,9 +15,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import com.contentsquare.android.Contentsquare
-import com.contentsquare.android.compose.analytics.TriggeredOnResume
 import com.contentsquare.android.sample.analytics.Analytics
+import com.contentsquare.api.compose.TriggeredOnResume
 
 class ComposeSimpleActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

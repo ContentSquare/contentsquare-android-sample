@@ -38,7 +38,9 @@ android {
 }
 
 dependencies {
-    implementation("com.contentsquare.android:sdk:0.7.1")
+    implementation("com.contentsquare.android:sdk:1.0.0")
+    implementation("com.contentsquare.android:sdk-compose:1.0.0")
+
     implementation("androidx.core:core-ktx:1.15.0")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("androidx.constraintlayout:constraintlayout:2.2.1")
