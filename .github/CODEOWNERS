@@ -1,9 +1,7 @@
 # CODEOWNERS documentation : https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners
-
-# add here at least the following to control the approval process of new changes to the repo 
-# * @Contentsquare/<your unit name in Github>
-
-# add lower granularity approval requirements here if there's a need for other stakeholders to approve changes to specific files
-
-# helmfile.yaml should be the same on every repo and is centrally managed by PF team
-helmfile.yaml @ContentSquare/devx
+#
+# ==================
+# Android SDK stuff
+# ==================
+# Android team will be the default owners for everything in repo.
+* @ContentSquare/android
