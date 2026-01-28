@@ -16,6 +16,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url = uri("https://cs-mobile-production.s3.eu-west-1.amazonaws.com/android/snapshot/")
+        }
     }
 }
 
