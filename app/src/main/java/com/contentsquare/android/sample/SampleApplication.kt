@@ -5,12 +5,17 @@ import android.app.Application
 import android.os.Bundle
 import com.contentsquare.CSQ
 import com.contentsquare.android.sample.crash.CrashHelper
+import com.contentsquare.api.model.LogLevel
 import com.contentsquare.api.model.ProductAnalyticsOptions
 
 class SampleApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
+
+        // DEBUG log level is helpful for devs while implementing the SDK
+        // should stay to INFO (default) in prod environment
+        CSQ.debug.logLevel = LogLevel.DEBUG
 
         CSQ.configureProductAnalytics(
             context = this,

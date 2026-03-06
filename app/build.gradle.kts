@@ -6,6 +6,7 @@ plugins {
     id("org.jetbrains.kotlin.plugin.compose")
     id("com.contentsquare.error.analysis.network")
     id("com.contentsquare.error.analysis.crash")
+    id("io.heap.gradle") version "1.1.+"
 }
 
 android {
