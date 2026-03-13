@@ -35,6 +35,11 @@ android {
         viewBinding = true
         compose = true
     }
+    packaging {
+        resources {
+            excludes += "META-INF/versions/9/OSGI-INF/MANIFEST.MF"
+        }
+    }
 }
 
 kotlin {
@@ -57,7 +62,7 @@ dependencies {
     implementation("androidx.viewpager2:viewpager2:1.1.0")
 
     // OkHTTP used for Error Analysis network monitoring and inspection features
-    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.12.0"))
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:5.3.2"))
     implementation("com.squareup.okhttp3:okhttp")
     implementation("com.squareup.okhttp3:logging-interceptor")
 
