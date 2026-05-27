@@ -30,7 +30,7 @@ object Analytics {
     }
 
     fun optIn(context: Context) {
-        CSQ.optIn(context)
+        CSQ.optIn()
     }
 
     fun optOut() {

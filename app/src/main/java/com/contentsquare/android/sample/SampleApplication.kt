@@ -27,7 +27,7 @@ class SampleApplication : Application() {
             )
         )
         CSQ.start(this)
-        CSQ.optIn(this)
+        CSQ.optIn()
         CrashHelper.init(this)
 
         registerActivityLifecycleCallbacks(object : ActivityLifecycleCallbacks {
