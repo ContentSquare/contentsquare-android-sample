@@ -5,5 +5,5 @@ plugins {
     id("org.jetbrains.kotlin.android") version "2.2.10" apply false
     id("org.jetbrains.kotlin.plugin.compose") version "2.2.10" apply false
     id("com.contentsquare.error.analysis.network") version "1.7.0" apply false
-    id("com.contentsquare.error.analysis.crash") version "1.7.0" apply false
+    id("com.contentsquare.error.analysis.crash") version "1.8.0" apply false
 }
