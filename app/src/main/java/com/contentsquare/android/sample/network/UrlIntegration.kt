@@ -17,7 +17,7 @@ class UrlIntegration : NetworkIntegration {
         callback: (String) -> Unit
     ) {
         val connection = URL(url).openConnection() as HttpURLConnection
-        connection.requestMethod = HttpMethod.GET.toString()
+        connection.requestMethod = httpMethod.name
         try {
             CoroutineScope(Dispatchers.IO).launch {
                 kotlin.runCatching {
