@@ -55,5 +55,6 @@ object Analytics {
 
     fun sendUserIdentifier(identifier: String) {
         CSQ.sendUserIdentifier(identifier)
+        CSQ.identify(identifier)
     }
 }
