@@ -4,7 +4,9 @@ import android.app.Activity
 import android.app.Application
 import android.os.Bundle
 import com.contentsquare.CSQ
+import com.contentsquare.StartConfig
 import com.contentsquare.android.sample.crash.CrashHelper
+import com.contentsquare.api.model.AnalyticsOptions
 import com.contentsquare.api.model.LogLevel
 import com.contentsquare.api.model.ProductAnalyticsOptions
 
@@ -17,16 +19,14 @@ class SampleApplication : Application() {
         // should stay to INFO (default) in prod environment
         CSQ.debug.logLevel = LogLevel.DEBUG
 
-        CSQ.configureProductAnalytics(
-            context = this,
-            envId = "3521501044",
-            options = ProductAnalyticsOptions(
-                enableViewAutocapture = true,
-                // Pageview capture is turned off in favor of manual screen tracking in this sample.
-                disablePageviewAutocapture = true
-            )
+        val analyticsOptions = AnalyticsOptions(
+            enableViewAutocapture = true,
+            disablePageviewAutocapture = true
         )
-        CSQ.start(this)
+        CSQ.start(
+            this,
+            StartConfig.withEnvironmentId("3521501044", analyticsOptions)
+        )
         CSQ.optIn()
         CrashHelper.init(this)
 
