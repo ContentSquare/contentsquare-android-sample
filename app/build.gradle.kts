@@ -49,8 +49,9 @@ kotlin {
 }
 
 dependencies {
-    implementation("com.contentsquare.android:sdk:1.11.2")
-    implementation("com.contentsquare.android:sdk-compose:1.11.2")
+    implementation("com.contentsquare.android:sdk:1.12.0")
+    implementation("com.contentsquare.android:sdk-compose:1.12.0")
+    implementation("com.contentsquare.android:sdk-core:0.3.0")
 
     implementation("androidx.core:core-ktx:1.17.0")
     implementation("androidx.appcompat:appcompat:1.7.1")
